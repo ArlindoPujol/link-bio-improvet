@@ -135,7 +135,7 @@
     transform:translateY(-4px);
     box-shadow:0 42px 80px -40px rgba(0,0,0,0.95);
   }
-  .cta-media{ position:relative; width:100%; height:298px; overflow:hidden; }
+  .cta-media{ position:relative; width:100%; height:250px; overflow:hidden; }
   .cta-media img{ width:100%; height:100%; object-fit:cover; object-position:50% 74%; display:block; }
   .cta-media .fade{
     position:absolute; inset:0;
@@ -151,17 +151,22 @@
     width:5px; height:5px; border-radius:50%;
     background:var(--gold-1); box-shadow:0 0 8px rgba(231,206,142,0.9);
   }
-  .cta-body{ padding:20px 24px 24px; }
+  .cta-body{ padding:20px 22px 22px; }
   .cta-title{
-    font-family:'Marcellus',serif; font-size:19px; line-height:1.42;
-    font-weight:400; color:#F4EBD5; letter-spacing:0.005em;
+    font-family:'Marcellus',serif; font-size:18px; line-height:1.46;
+    font-weight:400; color:#F4EBD5; letter-spacing:0.004em;
     text-wrap:balance;
   }
-  .cta-title .hl{ color:#E7CE8E; }
+  .hl{ color:#E7CE8E; }
   .cta-text{
     margin-top:11px;
     font-size:14px; line-height:1.72; color:#8C8266;
     text-wrap:pretty;
+  }
+  .cta-note{
+    margin-top:13px; text-align:center;
+    font-size:10px; letter-spacing:0.2em; text-transform:uppercase;
+    color:#7C7359; font-weight:500;
   }
   .cta-btn{
     position:relative; overflow:hidden;
@@ -299,7 +304,7 @@
         <div><img src="assets/id-mark.png" alt="Improvet"></div>
       </div>
       <h1 class="wordmark">Improvet</h1>
-      <p class="tagline">A única Escola de Negócios para veterinários especialistas do Brasil.</p>
+      <p class="tagline">A <span class="hl">única</span> Escola de Negócios para veterinários especialistas do Brasil.</p>
 
       <!-- PRIMARY CTA — o herói da página -->
       <!-- EDITE: coloque aqui o link real de agendamento (WhatsApp, Calendly, etc.) -->
@@ -315,6 +320,7 @@
             Quero concorrer
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
           </div>
+          <p class="cta-note">Vagas limitadas por turma</p>
         </div>
       </a>
 
