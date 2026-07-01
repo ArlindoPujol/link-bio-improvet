@@ -135,11 +135,11 @@
     transform:translateY(-4px);
     box-shadow:0 42px 80px -40px rgba(0,0,0,0.95);
   }
-  .cta-media{ position:relative; width:100%; height:250px; overflow:hidden; }
-  .cta-media img{ width:100%; height:100%; object-fit:cover; object-position:50% 28%; display:block; }
+  .cta-media{ position:relative; width:100%; height:274px; overflow:hidden; }
+  .cta-media img{ width:100%; height:100%; object-fit:cover; object-position:50% 71%; display:block; }
   .cta-media .fade{
     position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(21,16,10,0) 66%, rgba(21,16,10,0.45) 88%, var(--surface) 100%);
+    background:linear-gradient(180deg, rgba(21,16,10,0) 70%, rgba(21,16,10,0.4) 90%, var(--surface) 100%);
   }
   .badge{
     position:absolute; top:16px; left:16px;
@@ -151,11 +151,11 @@
     width:5px; height:5px; border-radius:50%;
     background:var(--gold-1); box-shadow:0 0 8px rgba(231,206,142,0.9);
   }
-  .cta-body{ padding:20px 22px 22px; }
+  .cta-body{ padding:6px 22px 22px; }
   .cta-title{
-    font-family:'Marcellus',serif; font-size:17px; line-height:1.52;
-    font-weight:400; color:#EFE6D2; letter-spacing:0.004em;
-    text-wrap:balance;
+    font-family:'Manrope',sans-serif; font-size:17px; line-height:1.5;
+    font-weight:600; color:#EFE6D2; letter-spacing:0.1px;
+    text-wrap:pretty;
   }
   .hl{ color:#E7CE8E; }
   .cta-text{
@@ -262,10 +262,14 @@
     font-size:12.5px; line-height:1.72; color:#6E6553; max-width:330px;
   }
   .founders-img-wrap{
-    position:relative; z-index:2; margin-top:8px;
+    position:relative; z-index:2; margin-top:12px;
     display:flex; justify-content:center; align-items:flex-end;
   }
-  .founders-img-wrap img{ display:block; width:84%; max-width:320px; height:auto; }
+  .founders-img-wrap img{
+    display:block; width:92%; max-width:340px; height:auto;
+    -webkit-mask-image:linear-gradient(to bottom, #000 68%, transparent 100%);
+    mask-image:linear-gradient(to bottom, #000 68%, transparent 100%);
+  }
 
   /* ---------- FOOTER ---------- */
   .foot{
@@ -314,8 +318,8 @@
           <div class="fade"></div>
         </div>
         <div class="cta-body">
-          <h2 class="cta-title">Concorra a um diagnóstico gratuito do seu negócio e descubra como construir uma carreira <span class="hl">sólida, reconhecida e lucrativa</span> na veterinária.</h2>
-          <p class="cta-text">Uma análise completa onde mapeamos, juntos, o que está travando seu crescimento e desenhamos o próximo passo da sua virada.</p>
+          <h2 class="cta-title">Concorra a um diagnóstico gratuito do seu negócio e descubra como construir uma carreira <span class="hl">sólida, reconhecida e lucrativa</span> na medicina veterinária.</h2>
+          <p class="cta-text">Análise completa onde mapeamos, juntos, o que está travando o crescimento do seu negócio e desenhamos os próximos passos da sua virada.</p>
           <div class="cta-btn">
             Quero concorrer
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
