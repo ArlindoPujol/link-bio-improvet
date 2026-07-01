@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#0F0C08">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <radialGradient id="tg" cx="50%" cy="34%" r="60%">
+        <stop offset="0%" stop-color="#2a2110"/>
+        <stop offset="100%" stop-color="#0F0C08"/>
+      </radialGradient>
+      <linearGradient id="tgold" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#E7CE8E"/>
+        <stop offset="55%" stop-color="#C79B2E"/>
+        <stop offset="100%" stop-color="#9C7A22"/>
+      </linearGradient>
+    </defs>
+    <rect width="1200" height="800" fill="url(#tg)"/>
+    <circle cx="600" cy="360" r="120" fill="url(#tgold)"/>
+    <text x="600" y="404" font-family="Georgia, serif" font-size="120" fill="#0F0C08" text-anchor="middle" font-weight="700">id</text>
+    <text x="600" y="560" font-family="Georgia, serif" font-size="52" fill="#F4EDDC" text-anchor="middle" letter-spacing="2">improvet.vet</text>
+  </svg>
+</template>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Marcellus&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html,body{ height:100%; }
+    body{ background:#0D0A06; -webkit-font-smoothing:antialiased; }
+  </style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="--radius:16px; --glow:1; min-height:100vh; width:100%; background:#0F0C08; color:#E6DCC6; font-family:'Manrope',sans-serif; font-weight:400; display:flex; flex-direction:column; align-items:center; position:relative; overflow:hidden; padding:clamp(48px,12vw,64px) clamp(18px,6vw,26px) 46px;">
+
+  <!-- ANIMATED BACKGROUND -->
+  <div data-blob="" style="position:absolute; top:-280px; left:50%; margin-left:-330px; width:660px; height:660px; border-radius:50%; background:radial-gradient(circle, rgba(199,155,46,0.16) 0%, rgba(199,155,46,0.04) 46%, rgba(15,12,8,0) 70%); opacity:var(--glow); pointer-events:none; will-change:transform;"></div>
+  <div data-blob="" style="position:absolute; top:34%; right:-190px; width:460px; height:460px; border-radius:50%; background:radial-gradient(circle, rgba(176,127,28,0.12) 0%, rgba(176,127,28,0.03) 48%, rgba(15,12,8,0) 70%); opacity:var(--glow); pointer-events:none; will-change:transform;"></div>
+  <div data-blob="" style="position:absolute; bottom:-180px; left:-170px; width:460px; height:460px; border-radius:50%; background:radial-gradient(circle, rgba(158,140,108,0.10) 0%, rgba(158,140,108,0.02) 50%, rgba(15,12,8,0) 70%); opacity:var(--glow); pointer-events:none; will-change:transform;"></div>
+
+  <main ref="{{ mainRef }}" style="position:relative; z-index:1; width:100%; max-width:404px; display:flex; flex-direction:column; align-items:center;">
+
+    <!-- HEADER -->
+    <div style="width:76px; height:76px; border-radius:50%; padding:1.5px; background:linear-gradient(140deg,#E7CE8E,#C79B2E 50%,#9C7A22); box-shadow:0 8px 30px rgba(181,126,16,0.28);">
+      <div style="width:100%; height:100%; border-radius:50%; overflow:hidden; background:#0F0C08; display:flex; align-items:center; justify-content:center;">
+        <img src="assets/id-mark.png" alt="Imagem Dourada" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+    </div>
+    <p style="margin-top:22px; font-size:11px; letter-spacing:0.34em; text-transform:uppercase; color:#8E866E; font-weight:500; white-space:nowrap;">Imagem Dourada</p>
+    <h1 style="margin-top:14px; font-family:'Marcellus',serif; font-size:clamp(32px,8.5vw,40px); line-height:1.0; font-weight:400; color:#F4EDDC; letter-spacing:0.005em;">improvet.vet</h1>
+    <p style="margin-top:15px; font-family:'Manrope',sans-serif; font-size:16px; font-weight:400; line-height:1.55; letter-spacing:0.2px; color:#BEB295; text-align:center; max-width:300px; text-wrap:pretty;">A única Escola de Negócios para veterinários especialistas do Brasil.</p>
+
+    <div style="width:32px; height:1px; margin:28px 0 26px; background:rgba(199,155,46,0.28);"></div>
+
+    <!-- FEATURED: DIAGNÓSTICO GRATUITO -->
+    <a href="#" style="width:100%; display:block; text-decoration:none; border-radius:var(--radius); overflow:hidden; background:#171108; border:1px solid rgba(199,155,46,0.16); transition:border-color .3s ease, transform .3s ease; box-shadow:0 30px 60px -34px rgba(0,0,0,0.85);" style-hover="border-color:rgba(231,206,142,0.45); transform:translateY(-3px);">
+      <div style="position:relative; width:100%; height:290px; overflow:hidden;">
+        <img src="assets/vet-dog.png" alt="Diagnóstico veterinário por imagem" style="width:100%; height:100%; object-fit:cover; object-position:50% 74%; display:block;">
+        <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(23,17,8,0) 55%, rgba(23,17,8,0.55) 82%, #171108 100%);"></div>
+        <span style="position:absolute; top:16px; left:16px; display:inline-flex; align-items:center; gap:8px; font-size:10px; font-weight:600; letter-spacing:0.28em; text-transform:uppercase; color:#E7CE8E;"><span style="width:5px; height:5px; border-radius:50%; background:#E7CE8E; box-shadow:0 0 8px rgba(231,206,142,0.9);"></span>Gratuito</span>
+      </div>
+      <div style="padding:18px 22px 22px;">
+        <h2 style="font-family:'Marcellus',serif; font-size:19px; line-height:1.35; font-weight:400; color:#F2E9D3; letter-spacing:0.005em;">Diagnóstico estratégico do seu negócio</h2>
+        <p style="margin-top:9px; font-size:12.5px; line-height:1.68; color:#9E906F;">Em 40 minutos mapeamos o que está travando seu crescimento e desenhamos o próximo passo — sem custo.</p>
+        <div style="margin-top:18px; display:flex; align-items:center; justify-content:center; gap:9px; padding:15px 22px; border-radius:11px; background:linear-gradient(135deg,#E7CE8E,#C49628 55%,#B07F1C); color:#1A1206; font-weight:600; font-size:11.5px; letter-spacing:0.18em; text-transform:uppercase; box-shadow:inset 0 1px 0 rgba(255,255,255,0.28);">
+          Verificar disponibilidade
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+        </div>
+      </div>
+    </a>
+
+    <!-- PRODUCTS -->
+    <p style="align-self:flex-start; margin:40px 0 2px 2px; font-size:10px; letter-spacing:0.4em; text-transform:uppercase; color:#6E6249; font-weight:500;">Programas</p>
+
+    <nav style="width:100%; display:flex; flex-direction:column; border-top:1px solid rgba(199,155,46,0.14);">
+
+      <a href="#" style="display:flex; align-items:center; gap:18px; padding:21px 4px; border-bottom:1px solid rgba(199,155,46,0.14); text-decoration:none; transition:padding-left .28s cubic-bezier(.2,.7,.2,1);" style-hover="padding-left:12px;">
+        <span style="flex-shrink:0; font-family:'Marcellus',serif; font-size:15px; color:#C79B2E; width:24px;">01</span>
+        <span style="flex:1;">
+          <span style="display:block; font-size:15px; font-weight:500; color:#EADCBC; letter-spacing:0.01em;">Nome do programa 1</span>
+          <span style="display:block; margin-top:4px; font-size:12px; color:#7E7257;">Descrição curta do programa.</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; opacity:.7;"><path d="M9 6l6 6-6 6"></path></svg>
+      </a>
+
+      <a href="#" style="display:flex; align-items:center; gap:18px; padding:21px 4px; border-bottom:1px solid rgba(199,155,46,0.14); text-decoration:none; transition:padding-left .28s cubic-bezier(.2,.7,.2,1);" style-hover="padding-left:12px;">
+        <span style="flex-shrink:0; font-family:'Marcellus',serif; font-size:15px; color:#C79B2E; width:24px;">02</span>
+        <span style="flex:1;">
+          <span style="display:block; font-size:15px; font-weight:500; color:#EADCBC; letter-spacing:0.01em;">Nome do programa 2</span>
+          <span style="display:block; margin-top:4px; font-size:12px; color:#7E7257;">Descrição curta do programa.</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; opacity:.7;"><path d="M9 6l6 6-6 6"></path></svg>
+      </a>
+
+      <a href="#" style="display:flex; align-items:center; gap:18px; padding:21px 4px; border-bottom:1px solid rgba(199,155,46,0.14); text-decoration:none; transition:padding-left .28s cubic-bezier(.2,.7,.2,1);" style-hover="padding-left:12px;">
+        <span style="flex-shrink:0; font-family:'Marcellus',serif; font-size:15px; color:#C79B2E; width:24px;">03</span>
+        <span style="flex:1;">
+          <span style="display:block; font-size:15px; font-weight:500; color:#EADCBC; letter-spacing:0.01em;">Nome do programa 3</span>
+          <span style="display:block; margin-top:4px; font-size:12px; color:#7E7257;">Descrição curta do programa.</span>
+        </span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C79B2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0; opacity:.7;"><path d="M9 6l6 6-6 6"></path></svg>
+      </a>
+
+    </nav>
+
+    <!-- FOUNDERS -->
+    <div style="width:100%; margin-top:44px; border-radius:var(--radius); background:linear-gradient(170deg,#F4EDDE 0%, #EADFCA 100%); overflow:hidden; position:relative; box-shadow:0 26px 60px -30px rgba(0,0,0,0.7);">
+      <span style="position:absolute; top:14px; right:2px; font-family:'Marcellus',serif; font-size:92px; line-height:0.8; font-weight:400; color:rgba(176,132,42,0.11); letter-spacing:-0.02em; pointer-events:none; z-index:1;">2019</span>
+      <div style="padding:30px 26px 0; position:relative; z-index:2;">
+        <p style="font-family:'Cormorant Garamond',serif; font-size:25px; font-style:italic; font-weight:600; line-height:1.24; color:#233A3C;">“Já passamos <span style="color:#B0842A;">exatamente</span> pelo que você está passando.”</p>
+        <p style="margin-top:12px; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:15px; font-weight:500; color:#B0842A; letter-spacing:0.02em;">— Kris &amp; Vicente Kondo</p>
+        <p style="margin-top:14px; font-size:12.5px; line-height:1.72; color:#6E6553; max-width:330px;">Um casal de veterinários à frente da Imagem Dourada, dedicado a elevar o padrão do diagnóstico por imagem no Brasil.</p>
+      </div>
+      <div style="position:relative; z-index:2; margin-top:6px; display:flex; justify-content:center; align-items:flex-end;">
+        <img src="assets/founders.png" alt="Kris e Vicente Kondo" style="display:block; width:84%; max-width:320px; height:auto;">
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer style="margin-top:38px; display:flex; flex-direction:column; align-items:center; gap:18px;">
+      <div style="width:30px; height:1px; background:rgba(199,155,46,0.3);"></div>
+      <a href="#" aria-label="YouTube" style="width:42px; height:42px; border-radius:50%; border:1px solid rgba(199,155,46,0.28); display:flex; align-items:center; justify-content:center; color:#C79B2E; text-decoration:none; transition:border-color .25s ease, color .25s ease, transform .25s ease;" style-hover="border-color:rgba(231,206,142,0.6); color:#E7CE8E; transform:translateY(-2px);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 7.2a3 3 0 0 0-2.1-2.1C18.6 4.6 12 4.6 12 4.6s-6.6 0-8.4.5A3 3 0 0 0 1.5 7.2 31 31 0 0 0 1 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23 12a31 31 0 0 0-.5-4.8ZM10 15.2V8.8L15.2 12 10 15.2Z"></path></svg>
+      </a>
+      <p style="font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase; color:#5F553F;">© {{ year }} · improvet.vet</p>
+    </footer>
+
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:404,&quot;height&quot;:940},&quot;cantos&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Suave&quot;,&quot;Arredondado&quot;,&quot;Reto&quot;],&quot;default&quot;:&quot;Suave&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Estilo&quot;},&quot;brilho&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Estilo&quot;}}">
+class Component extends DCLogic {
+  rootRef = React.createRef();
+  mainRef = React.createRef();
+
+  componentDidMount(){
+    this.applyTweaks();
+    this.runMotion();
+  }
+  componentDidUpdate(){ this.applyTweaks(); }
+
+  applyTweaks(){
+    const el = this.rootRef.current;
+    if(!el) return;
+    const radius = { 'Suave':'16px', 'Reto':'4px', 'Arredondado':'24px' }[this.props.cantos ?? 'Suave'] || '16px';
+    el.style.setProperty('--radius', radius);
+    el.style.setProperty('--glow', (this.props.brilho ?? true) ? '1' : '0');
+  }
+
+  runMotion(){
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Drifting background aurora
+    const root = this.rootRef.current;
+    if(root && !reduce){
+      root.querySelectorAll('[data-blob]').forEach((b, i) => {
+        const dx = (i % 2 === 0 ? 1 : -1) * (32 + i * 10);
+        const dy = 24 + i * 14;
+        b.animate([
+          { transform: 'translate(0px,0px) scale(1)' },
+          { transform: `translate(${dx}px,${dy}px) scale(1.14)` },
+          { transform: 'translate(0px,0px) scale(1)' }
+        ], { duration: 15000 + i * 4500, iterations: Infinity, easing: 'ease-in-out' });
+      });
+    }
+    // Staggered entrance
+    const main = this.mainRef.current;
+    if(main && !reduce){
+      // Transform-only reveal: content is never hidden (safe even if the
+      // animation timeline is paused), it just settles upward.
+      Array.from(main.children).forEach((el, i) => {
+        el.animate([
+          { transform: 'translateY(26px)' },
+          { transform: 'translateY(0)' }
+        ], { duration: 780, delay: 70 * i, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'both' });
+      });
+    }
+  }
+
+  renderVals(){
+    return { rootRef: this.rootRef, mainRef: this.mainRef, year: 2026 };
+  }
+}
+</script>
+</body>
+</html>
